@@ -1,5 +1,4 @@
-/* B"H
- */
+
 
 export type ProductReview = {
   rating: number

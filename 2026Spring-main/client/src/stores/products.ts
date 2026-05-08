@@ -1,5 +1,3 @@
-/* B"H
- */
 
 import data from '../data/products.json'
 import { defineStore } from 'pinia'
