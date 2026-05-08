@@ -1,6 +1,6 @@
 
 import type { CartItem } from "../types"
-// Models can use other models, but should not use controllers or routes.
+
 import { get as getProduct } from "./products"
 import { PagingRequest } from "../types/dataEnvelopes"
 import { connect, toCamelCase } from "./supabase"
@@ -57,7 +57,7 @@ export async function update(
 
     const newQuantity = (existing?.quantity ?? 0) + quantity
 
-    // If quantity is 0 or less, remove item from cart
+    
     if (newQuantity <= 0) {
         await db
             .from(TABLE_NAME)
@@ -68,7 +68,6 @@ export async function update(
         return { product, quantity: 0 }
     }
 
-    // Upsert means "insert or update": if a cart item for this user/product already exists, it will update the quantity; otherwise, it will create a new cart item
     const { data: row, error } = await db
         .from(TABLE_NAME)
         .upsert(

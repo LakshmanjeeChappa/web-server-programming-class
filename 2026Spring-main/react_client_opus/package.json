@@ -12,6 +12,7 @@
     "@types/gapi": "^0.0.47",
     "@types/gapi.client.calendar-v3": "^0.0.4",
     "@types/google.accounts": "^0.0.18",
+    "@types/node": "^25.6.2",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
@@ -24,6 +25,6 @@
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "react-router-dom": "^7.14.2",
-    "zustand": "^5.0.12"
+    "zustand": "^5.0.13"
   }
 }
